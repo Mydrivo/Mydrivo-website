@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MyDrivo | Professional Driver Services</title>
+<meta name="description" content="MyDrivo - Professional driver services in Hyderabad. Your Car, Your Time, Your Safety.">
+<style>
+:root{--gold:#d7ad45;--gold2:#f3d27a;--black:#080808;--card:#121212;--muted:#b9b9b9}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--black);color:#fff}
+a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 20px}
+header{position:sticky;top:0;z-index:5;background:rgba(8,8,8,.94);border-bottom:1px solid #292929}
+nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{font-size:27px;font-weight:900;color:var(--gold2);letter-spacing:-1px}.brand span{color:#fff}
+nav .links{display:flex;gap:22px;font-size:14px;color:#ddd}.btn{display:inline-block;padding:13px 18px;border-radius:9px;font-weight:800;border:1px solid var(--gold);background:linear-gradient(135deg,var(--gold2),var(--gold));color:#090909}
+.hero{padding:80px 0 60px;background:radial-gradient(circle at 80% 20%,#2a2110 0,#080808 42%);text-align:center}
+.badge{display:inline-block;border:1px solid #725c28;color:var(--gold2);padding:7px 12px;border-radius:30px;font-size:12px;margin-bottom:18px}
+h1{font-size:clamp(40px,8vw,76px);margin:0;line-height:1.02}.gold{color:var(--gold2)}
+.hero p{max-width:650px;margin:22px auto;color:#ccc;font-size:18px;line-height:1.6}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+section{padding:65px 0}h2{text-align:center;font-size:34px;margin:0 0 12px}.sub{text-align:center;color:var(--muted);max-width:650px;margin:0 auto 34px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(145deg,#171717,#0e0e0e);border:1px solid #292929;border-radius:16px;padding:24px}.icon{font-size:28px}.card h3{margin:14px 0 8px}.card p{color:#aaa;line-height:1.5;font-size:14px}
+.booking{background:#0f0f0f;border-top:1px solid #222;border-bottom:1px solid #222}.form{max-width:720px;margin:auto;display:grid;gap:13px}.row{display:grid;grid-template-columns:1fr 1fr;gap:13px}input,select,textarea{width:100%;padding:14px;border-radius:9px;border:1px solid #363636;background:#181818;color:#fff}textarea{min-height:90px}.full{width:100%;cursor:pointer}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.feature{padding:18px;border-left:2px solid var(--gold);background:#111}.feature b{display:block;margin-bottom:6px}.feature span{font-size:13px;color:#aaa}
+footer{padding:35px 0;border-top:1px solid #222;text-align:center;color:#999}.tag{color:var(--gold2);font-weight:700;letter-spacing:.8px}
+@media(max-width:760px){nav .links{display:none}.grid,.features{grid-template-columns:1fr}.row{grid-template-columns:1fr}.hero{padding-top:55px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#">My<span>Drivo</span></a>
+<div class="links"><a href="#services">Services</a><a href="#booking">Book</a><a href="#why">Why Us</a><a href="#contact">Contact</a></div>
+<a class="btn" id="topWa" href="#">WhatsApp</a>
+</nav></div></header>
+
+<main>
+<section class="hero">
+<div class="wrap">
+<div class="badge">HYDERABAD • DRIVER SERVICES</div>
+<h1>Your Car.<br><span class="gold">Your Time. Your Safety.</span></h1>
+<p>Professional drivers when you need them. Book a temporary, permanent, outstation or safe ride-home driver through MyDrivo.</p>
+<div class="actions"><a class="btn" href="#booking">Book a Driver</a><a class="btn" style="background:transparent;color:var(--gold2)" id="heroWa" href="#">WhatsApp Now</a></div>
+</div>
+</section>
+
+<section id="services"><div class="wrap">
+<h2>Our <span class="gold">Services</span></h2><p class="sub">Simple booking. Trusted drivers. Fast response.</p>
+<div class="grid">
+<div class="card"><div class="icon">🚗</div><h3>Temporary Driver</h3><p>Need a driver for a few hours or a day? Request one quickly.</p></div>
+<div class="card"><div class="icon">👨‍✈️</div><h3>Permanent Driver</h3><p>Find a dependable driver for regular personal or family requirements.</p></div>
+<div class="card"><div class="icon">🛣️</div><h3>Outstation Driver</h3><p>Drivers for long-distance and multi-day travel with your own car.</p></div>
+<div class="card"><div class="icon">🛡️</div><h3>Drink & Drive</h3><p>Safe ride-home driver service when you should not drive yourself.</p></div>
+<div class="card"><div class="icon">🅿️</div><h3>Valet Parking</h3><p>Professional valet support for events, offices and establishments.</p></div>
+<div class="card"><div class="icon">✈️</div><h3>Airport Driver</h3><p>Driver pickup and drop support for Hyderabad airport journeys.</p></div>
+</div></div></section>
+
+<section id="booking" class="booking"><div class="wrap">
+<h2>Book Your <span class="gold">Driver</span></h2><p class="sub">For the first version, booking can go directly to WhatsApp—no paid booking system required.</p>
+<form class="form" id="bookForm">
+<div class="row"><input id="name" placeholder="Your Name" required><input id="phone" placeholder="Mobile Number" required></div>
+<div class="row"><select id="service" required><option value="">Select Service</option><option>Temporary Driver</option><option>Permanent Driver</option><option>Outstation Driver</option><option>Drink & Drive</option><option>Valet Parking</option><option>Airport Driver</option></select><input id="date" type="date"></div>
+<input id="location" placeholder="Pickup / Service Location">
+<textarea id="note" placeholder="Any additional requirement"></textarea>
+<button class="btn full" type="submit">Send Booking on WhatsApp</button>
+</form>
+</div></section>
+
+<section id="why"><div class="wrap">
+<h2>Why <span class="gold">MyDrivo?</span></h2><p class="sub">Built around a strong local driver network and a simple customer experience.</p>
+<div class="features">
+<div class="feature"><b>450+ Drivers</b><span>Grow your verified driver network here.</span></div>
+<div class="feature"><b>Quick Response</b><span>Direct WhatsApp booking keeps the process fast.</span></div>
+<div class="feature"><b>Transparent</b><span>Show service and pricing clearly to customers.</span></div>
+<div class="feature"><b>Local First</b><span>Focused on Hyderabad in the launch phase.</span></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap" style="text-align:center">
+<h2>MyDrivo</h2><p class="tag">YOUR CAR • YOUR TIME • YOUR SAFETY</p>
+<p style="color:#aaa">Professional Driver Services • Hyderabad</p>
+<a class="btn" id="contactWa" href="#">Chat on WhatsApp</a>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 MyDrivo. Professional Driver Services.</div></footer>
+
+<script>
+const WHATSAPP_NUMBER="91XXXXXXXXXX"; // Replace with your MyDrivo WhatsApp number
+const wa=(msg)=>"https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg);
+["topWa","heroWa","contactWa"].forEach(id=>document.getElementById(id).href=wa("Hello MyDrivo, I need a driver."));
+document.getElementById("bookForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const msg=`MyDrivo Driver Booking%0AName: ${name.value}%0AMobile: ${phone.value}%0AService: ${service.value}%0ADate: ${date.value||"Not specified"}%0ALocation: ${location.value||"Not specified"}%0ARequirement: ${note.value||"None"}`;
+ window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg)," _blank");
+});
+</script>
+</body></html>
